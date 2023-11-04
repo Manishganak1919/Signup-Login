@@ -1,0 +1,147 @@
+/* Default styles for desktop */
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 600px;
+  margin-top: 50px;
+  background: #140f1a;
+  padding-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text {
+  color: #ffd700;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 9px;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #cccccc;
+  border-radius: 6px;
+}
+
+.input img {
+  margin: 0px 30px;
+}
+
+.input input {
+  height: 50px;
+  width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.forget-password {
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.forget-password span {
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.submit_container {
+  display: flex;
+  gap: 30px;
+  margin: 60px auto;
+}
+
+.Submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #000000;
+  background: #ffd700;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.gray{
+  background:#EAEAEA;
+  color:#676767;
+}
+
+/* Responsive styles for tablet (e.g., 768px) */
+@media (max-width: 768px) {
+  .Container {
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for mobile (e.g., 480px) */
+@media (max-width: 480px) {
+  .Container {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .text {
+    font-size: 36px;
+  }
+
+  .input {
+    height: 60px;
+  }
+
+  .input img {
+    margin: 0px 15px;
+  }
+
+  .input input {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .forget-password {
+    padding-left: 30px;
+    font-size: 16px;
+  }
+
+  .Submit {
+    width: 150px;
+    height: 49px;
+    font-size: 16px;
+  }
+}
